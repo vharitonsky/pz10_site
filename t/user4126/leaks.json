@@ -1,0 +1,23 @@
+{
+  "variant": "user4126",
+  "items": [
+    {
+      "text": "AWS_SECRET_ACCESS_KEY=…  (синтетичний ключ, значення вирізано)"
+    },
+    {
+      "text": "-----BEGIN RSA PRIVATE KEY-----  (приватний ключ id_rsa у репозиторії)"
+    },
+    {
+      "text": "STRIPE_SECRET=sk_live_…  (синтетичний секретний ключ)"
+    },
+    {
+      "text": "NODE_ENV=production"
+    },
+    {
+      "text": "# TODO: винести ключі у Vault"
+    },
+    {
+      "text": "STRIPE_PUBLISHABLE_KEY=pk_live_…  (публічний ключ, не секрет)"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "variant": "user1014",
+  "project": "shop-backend",
+  "package_json": "{\n  \"name\": \"shop-backend\",\n  \"version\": \"1.0.0\",\n  \"dependencies\": {\n    \"cors\": \"^2.8.5\",\n    \"lodash\": \"^4.17.11\",\n    \"dotenv\": \"^16.0.3\",\n    \"express\": \"^4.18.2\",\n    \"ejs\": \"^3.1.6\"\n  }\n}",
+  "requirements_txt": "pydantic==2.1.1\ngunicorn==21.2.0\nFlask==0.12.2\nurllib3==1.25.2\nrequests==2.19.1\n",
+  "dependencies": [
+    {
+      "eco": "npm",
+      "name": "ejs",
+      "version": "3.1.6",
+      "key": "ejs@3.1.6"
+    },
+    {
+      "eco": "npm",
+      "name": "cors",
+      "version": "2.8.5",
+      "key": "cors@2.8.5"
+    },
+    {
+      "eco": "pip",
+      "name": "gunicorn",
+      "version": "21.2.0",
+      "key": "gunicorn@21.2.0"
+    },
+    {
+      "eco": "npm",
+      "name": "lodash",
+      "version": "4.17.11",
+      "key": "lodash@4.17.11"
+    },
+    {
+      "eco": "pip",
+      "name": "pydantic",
+      "version": "2.1.1",
+      "key": "pydantic@2.1.1"
+    },
+    {
+      "eco": "pip",
+      "name": "urllib3",
+      "version": "1.25.2",
+      "key": "urllib3@1.25.2"
+    },
+    {
+      "eco": "npm",
+      "name": "express",
+      "version": "4.18.2",
+      "key": "express@4.18.2"
+    },
+    {
+      "eco": "pip",
+      "name": "requests",
+      "version": "2.19.1",
+      "key": "requests@2.19.1"
+    },
+    {
+      "eco": "pip",
+      "name": "Flask",
+      "version": "0.12.2",
+      "key": "Flask@0.12.2"
+    },
+    {
+      "eco": "npm",
+      "name": "dotenv",
+      "version": "16.0.3",
+      "key": "dotenv@16.0.3"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "variant": "user1095",
+  "items": [
+    {
+      "text": "API_BASE_URL=https://api.shop.example.com"
+    },
+    {
+      "text": "# TODO: винести ключі у Vault"
+    },
+    {
+      "text": "AWS_SECRET_ACCESS_KEY=…  (синтетичний ключ, значення вирізано)"
+    },
+    {
+      "text": "STRIPE_SECRET=sk_live_…  (синтетичний секретний ключ)"
+    }
+  ]
+}

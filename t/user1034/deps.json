@@ -1,0 +1,74 @@
+{
+  "variant": "user1034",
+  "project": "shop-backend",
+  "package_json": "{\n  \"name\": \"shop-backend\",\n  \"version\": \"1.0.0\",\n  \"dependencies\": {\n    \"react\": \"^18.2.0\",\n    \"cors\": \"^2.8.5\",\n    \"express\": \"^4.18.2\",\n    \"axios\": \"^0.21.0\",\n    \"node-fetch\": \"^2.6.0\",\n    \"minimist\": \"^1.2.0\"\n  }\n}",
+  "requirements_txt": "Flask==0.12.2\npydantic==2.1.1\nJinja2==2.10\nSQLAlchemy==2.0.19\nrequests==2.19.1\n",
+  "dependencies": [
+    {
+      "eco": "npm",
+      "name": "axios",
+      "version": "0.21.0",
+      "key": "axios@0.21.0"
+    },
+    {
+      "eco": "npm",
+      "name": "cors",
+      "version": "2.8.5",
+      "key": "cors@2.8.5"
+    },
+    {
+      "eco": "npm",
+      "name": "react",
+      "version": "18.2.0",
+      "key": "react@18.2.0"
+    },
+    {
+      "eco": "npm",
+      "name": "node-fetch",
+      "version": "2.6.0",
+      "key": "node-fetch@2.6.0"
+    },
+    {
+      "eco": "npm",
+      "name": "minimist",
+      "version": "1.2.0",
+      "key": "minimist@1.2.0"
+    },
+    {
+      "eco": "pip",
+      "name": "pydantic",
+      "version": "2.1.1",
+      "key": "pydantic@2.1.1"
+    },
+    {
+      "eco": "npm",
+      "name": "express",
+      "version": "4.18.2",
+      "key": "express@4.18.2"
+    },
+    {
+      "eco": "pip",
+      "name": "Flask",
+      "version": "0.12.2",
+      "key": "Flask@0.12.2"
+    },
+    {
+      "eco": "pip",
+      "name": "SQLAlchemy",
+      "version": "2.0.19",
+      "key": "SQLAlchemy@2.0.19"
+    },
+    {
+      "eco": "pip",
+      "name": "requests",
+      "version": "2.19.1",
+      "key": "requests@2.19.1"
+    },
+    {
+      "eco": "pip",
+      "name": "Jinja2",
+      "version": "2.10",
+      "key": "Jinja2@2.10"
+    }
+  ]
+}

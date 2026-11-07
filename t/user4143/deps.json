@@ -1,0 +1,68 @@
+{
+  "variant": "user4143",
+  "project": "shop-backend",
+  "package_json": "{\n  \"name\": \"shop-backend\",\n  \"version\": \"1.0.0\",\n  \"dependencies\": {\n    \"ejs\": \"^3.1.6\",\n    \"helmet\": \"^6.0.1\",\n    \"lodash\": \"^4.17.11\",\n    \"react\": \"^18.2.0\",\n    \"minimist\": \"^1.2.0\",\n    \"dotenv\": \"^16.0.3\"\n  }\n}",
+  "requirements_txt": "Jinja2==2.10\nSQLAlchemy==2.0.19\nFlask==0.12.2\ngunicorn==21.2.0\n",
+  "dependencies": [
+    {
+      "eco": "npm",
+      "name": "minimist",
+      "version": "1.2.0",
+      "key": "minimist@1.2.0"
+    },
+    {
+      "eco": "npm",
+      "name": "lodash",
+      "version": "4.17.11",
+      "key": "lodash@4.17.11"
+    },
+    {
+      "eco": "npm",
+      "name": "react",
+      "version": "18.2.0",
+      "key": "react@18.2.0"
+    },
+    {
+      "eco": "pip",
+      "name": "Jinja2",
+      "version": "2.10",
+      "key": "Jinja2@2.10"
+    },
+    {
+      "eco": "pip",
+      "name": "Flask",
+      "version": "0.12.2",
+      "key": "Flask@0.12.2"
+    },
+    {
+      "eco": "npm",
+      "name": "dotenv",
+      "version": "16.0.3",
+      "key": "dotenv@16.0.3"
+    },
+    {
+      "eco": "pip",
+      "name": "SQLAlchemy",
+      "version": "2.0.19",
+      "key": "SQLAlchemy@2.0.19"
+    },
+    {
+      "eco": "npm",
+      "name": "ejs",
+      "version": "3.1.6",
+      "key": "ejs@3.1.6"
+    },
+    {
+      "eco": "npm",
+      "name": "helmet",
+      "version": "6.0.1",
+      "key": "helmet@6.0.1"
+    },
+    {
+      "eco": "pip",
+      "name": "gunicorn",
+      "version": "21.2.0",
+      "key": "gunicorn@21.2.0"
+    }
+  ]
+}

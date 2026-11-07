@@ -1,0 +1,20 @@
+{
+  "variant": "user1031",
+  "items": [
+    {
+      "text": "STRIPE_SECRET=sk_live_…  (синтетичний секретний ключ)"
+    },
+    {
+      "text": "GITHUB_TOKEN=ghp_…  (синтетичний токен доступу)"
+    },
+    {
+      "text": "NODE_ENV=production"
+    },
+    {
+      "text": "-----BEGIN RSA PRIVATE KEY-----  (приватний ключ id_rsa у репозиторії)"
+    },
+    {
+      "text": "# TODO: винести ключі у Vault"
+    }
+  ]
+}

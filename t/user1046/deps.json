@@ -1,0 +1,62 @@
+{
+  "variant": "user1046",
+  "project": "shop-backend",
+  "package_json": "{\n  \"name\": \"shop-backend\",\n  \"version\": \"1.0.0\",\n  \"dependencies\": {\n    \"lodash\": \"^4.17.11\",\n    \"dotenv\": \"^16.0.3\",\n    \"helmet\": \"^6.0.1\",\n    \"node-fetch\": \"^2.6.0\",\n    \"react\": \"^18.2.0\"\n  }\n}",
+  "requirements_txt": "requests==2.19.1\nSQLAlchemy==2.0.19\ngunicorn==21.2.0\nFlask==0.12.2\n",
+  "dependencies": [
+    {
+      "eco": "npm",
+      "name": "react",
+      "version": "18.2.0",
+      "key": "react@18.2.0"
+    },
+    {
+      "eco": "pip",
+      "name": "gunicorn",
+      "version": "21.2.0",
+      "key": "gunicorn@21.2.0"
+    },
+    {
+      "eco": "npm",
+      "name": "lodash",
+      "version": "4.17.11",
+      "key": "lodash@4.17.11"
+    },
+    {
+      "eco": "pip",
+      "name": "SQLAlchemy",
+      "version": "2.0.19",
+      "key": "SQLAlchemy@2.0.19"
+    },
+    {
+      "eco": "npm",
+      "name": "node-fetch",
+      "version": "2.6.0",
+      "key": "node-fetch@2.6.0"
+    },
+    {
+      "eco": "pip",
+      "name": "requests",
+      "version": "2.19.1",
+      "key": "requests@2.19.1"
+    },
+    {
+      "eco": "npm",
+      "name": "helmet",
+      "version": "6.0.1",
+      "key": "helmet@6.0.1"
+    },
+    {
+      "eco": "pip",
+      "name": "Flask",
+      "version": "0.12.2",
+      "key": "Flask@0.12.2"
+    },
+    {
+      "eco": "npm",
+      "name": "dotenv",
+      "version": "16.0.3",
+      "key": "dotenv@16.0.3"
+    }
+  ]
+}

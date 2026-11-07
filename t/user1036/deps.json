@@ -1,0 +1,68 @@
+{
+  "variant": "user1036",
+  "project": "shop-backend",
+  "package_json": "{\n  \"name\": \"shop-backend\",\n  \"version\": \"1.0.0\",\n  \"dependencies\": {\n    \"node-fetch\": \"^2.6.0\",\n    \"ejs\": \"^3.1.6\",\n    \"minimist\": \"^1.2.0\",\n    \"cors\": \"^2.8.5\",\n    \"react\": \"^18.2.0\",\n    \"dotenv\": \"^16.0.3\"\n  }\n}",
+  "requirements_txt": "urllib3==1.25.2\ngunicorn==21.2.0\npydantic==2.1.1\nrequests==2.19.1\n",
+  "dependencies": [
+    {
+      "eco": "npm",
+      "name": "cors",
+      "version": "2.8.5",
+      "key": "cors@2.8.5"
+    },
+    {
+      "eco": "pip",
+      "name": "gunicorn",
+      "version": "21.2.0",
+      "key": "gunicorn@21.2.0"
+    },
+    {
+      "eco": "pip",
+      "name": "pydantic",
+      "version": "2.1.1",
+      "key": "pydantic@2.1.1"
+    },
+    {
+      "eco": "npm",
+      "name": "node-fetch",
+      "version": "2.6.0",
+      "key": "node-fetch@2.6.0"
+    },
+    {
+      "eco": "npm",
+      "name": "ejs",
+      "version": "3.1.6",
+      "key": "ejs@3.1.6"
+    },
+    {
+      "eco": "npm",
+      "name": "react",
+      "version": "18.2.0",
+      "key": "react@18.2.0"
+    },
+    {
+      "eco": "npm",
+      "name": "dotenv",
+      "version": "16.0.3",
+      "key": "dotenv@16.0.3"
+    },
+    {
+      "eco": "pip",
+      "name": "urllib3",
+      "version": "1.25.2",
+      "key": "urllib3@1.25.2"
+    },
+    {
+      "eco": "pip",
+      "name": "requests",
+      "version": "2.19.1",
+      "key": "requests@2.19.1"
+    },
+    {
+      "eco": "npm",
+      "name": "minimist",
+      "version": "1.2.0",
+      "key": "minimist@1.2.0"
+    }
+  ]
+}

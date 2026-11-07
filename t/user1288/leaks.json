@@ -1,0 +1,20 @@
+{
+  "variant": "user1288",
+  "items": [
+    {
+      "text": "NODE_ENV=production"
+    },
+    {
+      "text": "db_password = 'Pr0d!b_pass_2021'    # пароль закомічено в config.py"
+    },
+    {
+      "text": "# TODO: винести ключі у Vault"
+    },
+    {
+      "text": "AWS_SECRET_ACCESS_KEY=…  (синтетичний ключ, значення вирізано)"
+    },
+    {
+      "text": "GITHUB_TOKEN=ghp_…  (синтетичний токен доступу)"
+    }
+  ]
+}

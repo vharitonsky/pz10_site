@@ -1,0 +1,20 @@
+{
+  "variant": "user1105",
+  "items": [
+    {
+      "text": "# TODO: винести ключі у Vault"
+    },
+    {
+      "text": "NODE_ENV=production"
+    },
+    {
+      "text": "GITHUB_TOKEN=ghp_…  (синтетичний токен доступу)"
+    },
+    {
+      "text": "DEBUG=false"
+    },
+    {
+      "text": "db_password = 'Pr0d!b_pass_2021'    # пароль закомічено в config.py"
+    }
+  ]
+}

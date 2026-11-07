@@ -1,0 +1,74 @@
+{
+  "variant": "user1021",
+  "project": "shop-backend",
+  "package_json": "{\n  \"name\": \"shop-backend\",\n  \"version\": \"1.0.0\",\n  \"dependencies\": {\n    \"react\": \"^18.2.0\",\n    \"helmet\": \"^6.0.1\",\n    \"ejs\": \"^3.1.6\",\n    \"axios\": \"^0.21.0\",\n    \"express\": \"^4.18.2\",\n    \"minimist\": \"^1.2.0\"\n  }\n}",
+  "requirements_txt": "urllib3==1.25.2\ngunicorn==21.2.0\npydantic==2.1.1\nPyYAML==5.1\nJinja2==2.10\n",
+  "dependencies": [
+    {
+      "eco": "pip",
+      "name": "PyYAML",
+      "version": "5.1",
+      "key": "PyYAML@5.1"
+    },
+    {
+      "eco": "npm",
+      "name": "ejs",
+      "version": "3.1.6",
+      "key": "ejs@3.1.6"
+    },
+    {
+      "eco": "npm",
+      "name": "react",
+      "version": "18.2.0",
+      "key": "react@18.2.0"
+    },
+    {
+      "eco": "pip",
+      "name": "Jinja2",
+      "version": "2.10",
+      "key": "Jinja2@2.10"
+    },
+    {
+      "eco": "pip",
+      "name": "gunicorn",
+      "version": "21.2.0",
+      "key": "gunicorn@21.2.0"
+    },
+    {
+      "eco": "pip",
+      "name": "pydantic",
+      "version": "2.1.1",
+      "key": "pydantic@2.1.1"
+    },
+    {
+      "eco": "npm",
+      "name": "helmet",
+      "version": "6.0.1",
+      "key": "helmet@6.0.1"
+    },
+    {
+      "eco": "npm",
+      "name": "minimist",
+      "version": "1.2.0",
+      "key": "minimist@1.2.0"
+    },
+    {
+      "eco": "npm",
+      "name": "express",
+      "version": "4.18.2",
+      "key": "express@4.18.2"
+    },
+    {
+      "eco": "npm",
+      "name": "axios",
+      "version": "0.21.0",
+      "key": "axios@0.21.0"
+    },
+    {
+      "eco": "pip",
+      "name": "urllib3",
+      "version": "1.25.2",
+      "key": "urllib3@1.25.2"
+    }
+  ]
+}

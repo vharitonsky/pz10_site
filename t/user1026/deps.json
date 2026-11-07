@@ -1,0 +1,68 @@
+{
+  "variant": "user1026",
+  "project": "shop-backend",
+  "package_json": "{\n  \"name\": \"shop-backend\",\n  \"version\": \"1.0.0\",\n  \"dependencies\": {\n    \"minimist\": \"^1.2.0\",\n    \"node-fetch\": \"^2.6.0\",\n    \"dotenv\": \"^16.0.3\",\n    \"react\": \"^18.2.0\",\n    \"cors\": \"^2.8.5\"\n  }\n}",
+  "requirements_txt": "Flask==0.12.2\nSQLAlchemy==2.0.19\npydantic==2.1.1\nPyYAML==5.1\nJinja2==2.10\n",
+  "dependencies": [
+    {
+      "eco": "npm",
+      "name": "minimist",
+      "version": "1.2.0",
+      "key": "minimist@1.2.0"
+    },
+    {
+      "eco": "pip",
+      "name": "PyYAML",
+      "version": "5.1",
+      "key": "PyYAML@5.1"
+    },
+    {
+      "eco": "npm",
+      "name": "cors",
+      "version": "2.8.5",
+      "key": "cors@2.8.5"
+    },
+    {
+      "eco": "npm",
+      "name": "react",
+      "version": "18.2.0",
+      "key": "react@18.2.0"
+    },
+    {
+      "eco": "npm",
+      "name": "dotenv",
+      "version": "16.0.3",
+      "key": "dotenv@16.0.3"
+    },
+    {
+      "eco": "pip",
+      "name": "SQLAlchemy",
+      "version": "2.0.19",
+      "key": "SQLAlchemy@2.0.19"
+    },
+    {
+      "eco": "pip",
+      "name": "pydantic",
+      "version": "2.1.1",
+      "key": "pydantic@2.1.1"
+    },
+    {
+      "eco": "npm",
+      "name": "node-fetch",
+      "version": "2.6.0",
+      "key": "node-fetch@2.6.0"
+    },
+    {
+      "eco": "pip",
+      "name": "Jinja2",
+      "version": "2.10",
+      "key": "Jinja2@2.10"
+    },
+    {
+      "eco": "pip",
+      "name": "Flask",
+      "version": "0.12.2",
+      "key": "Flask@0.12.2"
+    }
+  ]
+}

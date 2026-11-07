@@ -1,0 +1,20 @@
+{
+  "variant": "user4124",
+  "items": [
+    {
+      "text": "NODE_ENV=production"
+    },
+    {
+      "text": "STRIPE_SECRET=sk_live_…  (синтетичний секретний ключ)"
+    },
+    {
+      "text": "GITHUB_TOKEN=ghp_…  (синтетичний токен доступу)"
+    },
+    {
+      "text": "# TODO: винести ключі у Vault"
+    },
+    {
+      "text": "DEBUG=false"
+    }
+  ]
+}

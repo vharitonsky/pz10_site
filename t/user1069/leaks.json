@@ -1,0 +1,17 @@
+{
+  "variant": "user1069",
+  "items": [
+    {
+      "text": "STRIPE_PUBLISHABLE_KEY=pk_live_…  (публічний ключ, не секрет)"
+    },
+    {
+      "text": "db_password = 'Pr0d!b_pass_2021'    # пароль закомічено в config.py"
+    },
+    {
+      "text": "# TODO: винести ключі у Vault"
+    },
+    {
+      "text": "AWS_SECRET_ACCESS_KEY=…  (синтетичний ключ, значення вирізано)"
+    }
+  ]
+}

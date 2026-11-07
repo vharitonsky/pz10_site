@@ -1,0 +1,20 @@
+{
+  "variant": "user1027",
+  "items": [
+    {
+      "text": "STRIPE_SECRET=sk_live_…  (синтетичний секретний ключ)"
+    },
+    {
+      "text": "API_BASE_URL=https://api.shop.example.com"
+    },
+    {
+      "text": "AWS_SECRET_ACCESS_KEY=…  (синтетичний ключ, значення вирізано)"
+    },
+    {
+      "text": "# TODO: винести ключі у Vault"
+    },
+    {
+      "text": "NODE_ENV=production"
+    }
+  ]
+}

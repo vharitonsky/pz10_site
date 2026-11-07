@@ -1,0 +1,20 @@
+{
+  "variant": "user4132",
+  "items": [
+    {
+      "text": "NODE_ENV=production"
+    },
+    {
+      "text": "STRIPE_SECRET=sk_live_…  (синтетичний секретний ключ)"
+    },
+    {
+      "text": "DEBUG=false"
+    },
+    {
+      "text": "# TODO: винести ключі у Vault"
+    },
+    {
+      "text": "db_password = 'Pr0d!b_pass_2021'    # пароль закомічено в config.py"
+    }
+  ]
+}

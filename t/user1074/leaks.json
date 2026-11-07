@@ -1,0 +1,20 @@
+{
+  "variant": "user1074",
+  "items": [
+    {
+      "text": "db_password = 'Pr0d!b_pass_2021'    # пароль закомічено в config.py"
+    },
+    {
+      "text": "DEBUG=false"
+    },
+    {
+      "text": "NODE_ENV=production"
+    },
+    {
+      "text": "-----BEGIN RSA PRIVATE KEY-----  (приватний ключ id_rsa у репозиторії)"
+    },
+    {
+      "text": "STRIPE_PUBLISHABLE_KEY=pk_live_…  (публічний ключ, не секрет)"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "variant": "user4116",
+  "items": [
+    {
+      "text": "NODE_ENV=production"
+    },
+    {
+      "text": "API_BASE_URL=https://api.shop.example.com"
+    },
+    {
+      "text": "STRIPE_SECRET=sk_live_…  (синтетичний секретний ключ)"
+    },
+    {
+      "text": "AWS_SECRET_ACCESS_KEY=…  (синтетичний ключ, значення вирізано)"
+    }
+  ]
+}

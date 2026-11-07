@@ -1,0 +1,20 @@
+{
+  "variant": "user4139",
+  "items": [
+    {
+      "text": "db_password = 'Pr0d!b_pass_2021'    # пароль закомічено в config.py"
+    },
+    {
+      "text": "# TODO: винести ключі у Vault"
+    },
+    {
+      "text": "STRIPE_PUBLISHABLE_KEY=pk_live_…  (публічний ключ, не секрет)"
+    },
+    {
+      "text": "GITHUB_TOKEN=ghp_…  (синтетичний токен доступу)"
+    },
+    {
+      "text": "DEBUG=false"
+    }
+  ]
+}

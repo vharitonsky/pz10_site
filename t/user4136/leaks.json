@@ -1,0 +1,23 @@
+{
+  "variant": "user4136",
+  "items": [
+    {
+      "text": "API_BASE_URL=https://api.shop.example.com"
+    },
+    {
+      "text": "db_password = 'Pr0d!b_pass_2021'    # пароль закомічено в config.py"
+    },
+    {
+      "text": "DEBUG=false"
+    },
+    {
+      "text": "NODE_ENV=production"
+    },
+    {
+      "text": "-----BEGIN RSA PRIVATE KEY-----  (приватний ключ id_rsa у репозиторії)"
+    },
+    {
+      "text": "STRIPE_SECRET=sk_live_…  (синтетичний секретний ключ)"
+    }
+  ]
+}

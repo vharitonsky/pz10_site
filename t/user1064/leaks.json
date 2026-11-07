@@ -1,0 +1,17 @@
+{
+  "variant": "user1064",
+  "items": [
+    {
+      "text": "GITHUB_TOKEN=ghp_…  (синтетичний токен доступу)"
+    },
+    {
+      "text": "AWS_SECRET_ACCESS_KEY=…  (синтетичний ключ, значення вирізано)"
+    },
+    {
+      "text": "DEBUG=false"
+    },
+    {
+      "text": "NODE_ENV=production"
+    }
+  ]
+}

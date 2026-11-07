@@ -1,0 +1,17 @@
+{
+  "variant": "user1050",
+  "items": [
+    {
+      "text": "API_BASE_URL=https://api.shop.example.com"
+    },
+    {
+      "text": "-----BEGIN RSA PRIVATE KEY-----  (приватний ключ id_rsa у репозиторії)"
+    },
+    {
+      "text": "AWS_SECRET_ACCESS_KEY=…  (синтетичний ключ, значення вирізано)"
+    },
+    {
+      "text": "STRIPE_PUBLISHABLE_KEY=pk_live_…  (публічний ключ, не секрет)"
+    }
+  ]
+}

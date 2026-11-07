@@ -1,0 +1,17 @@
+{
+  "variant": "user1017",
+  "items": [
+    {
+      "text": "DEBUG=false"
+    },
+    {
+      "text": "GITHUB_TOKEN=ghp_…  (синтетичний токен доступу)"
+    },
+    {
+      "text": "API_BASE_URL=https://api.shop.example.com"
+    },
+    {
+      "text": "AWS_SECRET_ACCESS_KEY=…  (синтетичний ключ, значення вирізано)"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "variant": "user1079",
+  "project": "shop-backend",
+  "package_json": "{\n  \"name\": \"shop-backend\",\n  \"version\": \"1.0.0\",\n  \"dependencies\": {\n    \"dotenv\": \"^16.0.3\",\n    \"node-fetch\": \"^2.6.0\",\n    \"minimist\": \"^1.2.0\",\n    \"express\": \"^4.18.2\",\n    \"cors\": \"^2.8.5\"\n  }\n}",
+  "requirements_txt": "gunicorn==21.2.0\nJinja2==2.10\nurllib3==1.25.2\npydantic==2.1.1\n",
+  "dependencies": [
+    {
+      "eco": "npm",
+      "name": "express",
+      "version": "4.18.2",
+      "key": "express@4.18.2"
+    },
+    {
+      "eco": "pip",
+      "name": "pydantic",
+      "version": "2.1.1",
+      "key": "pydantic@2.1.1"
+    },
+    {
+      "eco": "npm",
+      "name": "node-fetch",
+      "version": "2.6.0",
+      "key": "node-fetch@2.6.0"
+    },
+    {
+      "eco": "npm",
+      "name": "dotenv",
+      "version": "16.0.3",
+      "key": "dotenv@16.0.3"
+    },
+    {
+      "eco": "pip",
+      "name": "urllib3",
+      "version": "1.25.2",
+      "key": "urllib3@1.25.2"
+    },
+    {
+      "eco": "pip",
+      "name": "Jinja2",
+      "version": "2.10",
+      "key": "Jinja2@2.10"
+    },
+    {
+      "eco": "npm",
+      "name": "minimist",
+      "version": "1.2.0",
+      "key": "minimist@1.2.0"
+    },
+    {
+      "eco": "pip",
+      "name": "gunicorn",
+      "version": "21.2.0",
+      "key": "gunicorn@21.2.0"
+    },
+    {
+      "eco": "npm",
+      "name": "cors",
+      "version": "2.8.5",
+      "key": "cors@2.8.5"
+    }
+  ]
+}

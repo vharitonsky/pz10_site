@@ -1,0 +1,23 @@
+{
+  "variant": "user1083",
+  "items": [
+    {
+      "text": "# TODO: винести ключі у Vault"
+    },
+    {
+      "text": "API_BASE_URL=https://api.shop.example.com"
+    },
+    {
+      "text": "db_password = 'Pr0d!b_pass_2021'    # пароль закомічено в config.py"
+    },
+    {
+      "text": "NODE_ENV=production"
+    },
+    {
+      "text": "STRIPE_SECRET=sk_live_…  (синтетичний секретний ключ)"
+    },
+    {
+      "text": "AWS_SECRET_ACCESS_KEY=…  (синтетичний ключ, значення вирізано)"
+    }
+  ]
+}

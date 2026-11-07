@@ -1,0 +1,20 @@
+{
+  "variant": "user1015",
+  "items": [
+    {
+      "text": "NODE_ENV=production"
+    },
+    {
+      "text": "# TODO: винести ключі у Vault"
+    },
+    {
+      "text": "-----BEGIN RSA PRIVATE KEY-----  (приватний ключ id_rsa у репозиторії)"
+    },
+    {
+      "text": "AWS_SECRET_ACCESS_KEY=…  (синтетичний ключ, значення вирізано)"
+    },
+    {
+      "text": "API_BASE_URL=https://api.shop.example.com"
+    }
+  ]
+}

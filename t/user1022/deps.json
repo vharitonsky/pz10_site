@@ -1,0 +1,74 @@
+{
+  "variant": "user1022",
+  "project": "shop-backend",
+  "package_json": "{\n  \"name\": \"shop-backend\",\n  \"version\": \"1.0.0\",\n  \"dependencies\": {\n    \"minimist\": \"^1.2.0\",\n    \"node-fetch\": \"^2.6.0\",\n    \"helmet\": \"^6.0.1\",\n    \"express\": \"^4.18.2\",\n    \"react\": \"^18.2.0\",\n    \"ejs\": \"^3.1.6\"\n  }\n}",
+  "requirements_txt": "Flask==0.12.2\nJinja2==2.10\nSQLAlchemy==2.0.19\nrequests==2.19.1\ngunicorn==21.2.0\n",
+  "dependencies": [
+    {
+      "eco": "pip",
+      "name": "gunicorn",
+      "version": "21.2.0",
+      "key": "gunicorn@21.2.0"
+    },
+    {
+      "eco": "npm",
+      "name": "react",
+      "version": "18.2.0",
+      "key": "react@18.2.0"
+    },
+    {
+      "eco": "npm",
+      "name": "minimist",
+      "version": "1.2.0",
+      "key": "minimist@1.2.0"
+    },
+    {
+      "eco": "npm",
+      "name": "node-fetch",
+      "version": "2.6.0",
+      "key": "node-fetch@2.6.0"
+    },
+    {
+      "eco": "npm",
+      "name": "express",
+      "version": "4.18.2",
+      "key": "express@4.18.2"
+    },
+    {
+      "eco": "pip",
+      "name": "SQLAlchemy",
+      "version": "2.0.19",
+      "key": "SQLAlchemy@2.0.19"
+    },
+    {
+      "eco": "npm",
+      "name": "helmet",
+      "version": "6.0.1",
+      "key": "helmet@6.0.1"
+    },
+    {
+      "eco": "pip",
+      "name": "requests",
+      "version": "2.19.1",
+      "key": "requests@2.19.1"
+    },
+    {
+      "eco": "pip",
+      "name": "Flask",
+      "version": "0.12.2",
+      "key": "Flask@0.12.2"
+    },
+    {
+      "eco": "pip",
+      "name": "Jinja2",
+      "version": "2.10",
+      "key": "Jinja2@2.10"
+    },
+    {
+      "eco": "npm",
+      "name": "ejs",
+      "version": "3.1.6",
+      "key": "ejs@3.1.6"
+    }
+  ]
+}

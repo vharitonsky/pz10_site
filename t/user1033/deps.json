@@ -1,0 +1,68 @@
+{
+  "variant": "user1033",
+  "project": "shop-backend",
+  "package_json": "{\n  \"name\": \"shop-backend\",\n  \"version\": \"1.0.0\",\n  \"dependencies\": {\n    \"react\": \"^18.2.0\",\n    \"cors\": \"^2.8.5\",\n    \"dotenv\": \"^16.0.3\",\n    \"ejs\": \"^3.1.6\",\n    \"lodash\": \"^4.17.11\",\n    \"axios\": \"^0.21.0\"\n  }\n}",
+  "requirements_txt": "Flask==0.12.2\nJinja2==2.10\ngunicorn==21.2.0\npydantic==2.1.1\n",
+  "dependencies": [
+    {
+      "eco": "npm",
+      "name": "cors",
+      "version": "2.8.5",
+      "key": "cors@2.8.5"
+    },
+    {
+      "eco": "pip",
+      "name": "Jinja2",
+      "version": "2.10",
+      "key": "Jinja2@2.10"
+    },
+    {
+      "eco": "npm",
+      "name": "lodash",
+      "version": "4.17.11",
+      "key": "lodash@4.17.11"
+    },
+    {
+      "eco": "pip",
+      "name": "pydantic",
+      "version": "2.1.1",
+      "key": "pydantic@2.1.1"
+    },
+    {
+      "eco": "pip",
+      "name": "gunicorn",
+      "version": "21.2.0",
+      "key": "gunicorn@21.2.0"
+    },
+    {
+      "eco": "npm",
+      "name": "react",
+      "version": "18.2.0",
+      "key": "react@18.2.0"
+    },
+    {
+      "eco": "npm",
+      "name": "dotenv",
+      "version": "16.0.3",
+      "key": "dotenv@16.0.3"
+    },
+    {
+      "eco": "pip",
+      "name": "Flask",
+      "version": "0.12.2",
+      "key": "Flask@0.12.2"
+    },
+    {
+      "eco": "npm",
+      "name": "ejs",
+      "version": "3.1.6",
+      "key": "ejs@3.1.6"
+    },
+    {
+      "eco": "npm",
+      "name": "axios",
+      "version": "0.21.0",
+      "key": "axios@0.21.0"
+    }
+  ]
+}

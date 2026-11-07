@@ -1,0 +1,17 @@
+{
+  "variant": "user1026",
+  "items": [
+    {
+      "text": "DEBUG=false"
+    },
+    {
+      "text": "AWS_SECRET_ACCESS_KEY=…  (синтетичний ключ, значення вирізано)"
+    },
+    {
+      "text": "# TODO: винести ключі у Vault"
+    },
+    {
+      "text": "db_password = 'Pr0d!b_pass_2021'    # пароль закомічено в config.py"
+    }
+  ]
+}

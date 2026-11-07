@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Практична 10 — персональне завдання</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#fff; --ink:#15181d; --muted:#5a6472;
+    --line:#e3e7ec; --accent:#0563bb; --code:#0b7a33; --warn:#9a3b1b;
+    --ok:#0b7a33; --chip:#eef2f7;
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --bg:#0f1216; --card:#171b21; --ink:#e7ebf0; --muted:#9aa5b1;
+    --line:#2a313a; --accent:#5aa2e8; --code:#5bd18a; --warn:#e2975f;
+    --ok:#5bd18a; --chip:#222832;
+  }}
+  :root[data-theme="dark"]{
+    --bg:#0f1216; --card:#171b21; --ink:#e7ebf0; --muted:#9aa5b1;
+    --line:#2a313a; --accent:#5aa2e8; --code:#5bd18a; --warn:#e2975f;
+    --ok:#5bd18a; --chip:#222832;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  .wrap{max-width:900px;margin:0 auto;padding:32px 16px 64px}
+  h1{font-size:1.6rem;margin:0 0 4px}
+  .sub{color:var(--muted);margin:0 0 24px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:20px;margin:16px 0}
+  label{display:block;font-weight:600;margin-bottom:8px}
+  .row{display:flex;gap:10px;flex-wrap:wrap}
+  input[type=text],textarea{font-size:1rem;padding:9px 11px;border:1px solid var(--line);
+    border-radius:8px;background:var(--bg);color:var(--ink);width:100%}
+  textarea{min-height:64px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9rem}
+  #num{flex:1;min-width:160px;font-size:1.1rem}
+  button{font-size:1rem;font-weight:600;padding:10px 18px;border:0;border-radius:8px;
+    background:var(--accent);color:#fff;cursor:pointer}
+  button.ghost{background:var(--chip);color:var(--ink);border:1px solid var(--line)}
+  button:disabled{opacity:.5;cursor:default}
+  .msg{margin-top:12px;color:var(--warn);font-weight:600;min-height:1.2em}
+  .hint{color:var(--muted);font-size:.9rem;margin-top:8px}
+  h2{font-size:1.15rem;margin:24px 0 8px}
+  h3{font-size:1rem;margin:18px 0 6px}
+  table{width:100%;border-collapse:collapse;font-size:.95rem}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:600}
+  td.mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.82rem;word-break:break-all}
+  .eco{font-size:.72rem;font-weight:600;padding:1px 7px;border-radius:999px;
+    background:var(--chip);color:var(--muted);border:1px solid var(--line)}
+  .verdict{white-space:nowrap}
+  .verdict label{display:inline-flex;align-items:center;gap:4px;font-weight:400;
+    margin:0 10px 0 0;cursor:pointer}
+  .critcell{text-align:center;white-space:nowrap}
+  pre{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:14px;
+    overflow:auto;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.82rem;
+    color:var(--code);line-height:1.5}
+  ol.steps{margin:8px 0 0;padding-left:22px}
+  ol.steps>li{margin:10px 0}
+  ul{padding-left:22px}
+  .ex{background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:8px;padding:12px 14px;margin:10px 0}
+  .ex b{color:var(--ink)}
+  code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;
+    background:var(--chip);padding:1px 5px;border-radius:4px}
+  .tools{display:flex;gap:10px;flex-wrap:wrap;margin:4px 0 14px}
+  .leaks label{display:flex;gap:10px;align-items:flex-start;padding:9px 11px;
+    border:1px solid var(--line);border-radius:8px;margin:7px 0;font-weight:400;cursor:pointer}
+  .leaks .txt{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.82rem;word-break:break-all}
+  .hidden{display:none}
+  footer{color:var(--muted);font-size:.85rem;margin-top:32px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Практична 10 — персональне завдання</h1>
+  <p class="sub">Аналіз складу залежностей (SCA), пошук витоків і складання звіту.
+    Введіть свій user-id зі списку групи, виконайте завдання прямо на сторінці та
+    завантажте відповіді у файл для здачі.</p>
+
+  <div class="card">
+    <label for="num">Ваш ідентифікатор (user-id)</label>
+    <div class="row">
+      <input id="num" type="text" inputmode="text" placeholder="напр. user1288"
+        autocomplete="off" spellcheck="false">
+      <button id="go">Отримати завдання</button>
+    </div>
+    <div id="msg" class="msg"></div>
+    <div id="hint" class="hint"></div>
+  </div>
+
+  <div class="card">
+    <h2 style="margin-top:0">Що і як робити</h2>
+    <p class="hint">Інструкція однакова для всіх. Персональні дані з'являться нижче
+      після вводу user-id. CVE/CVSS шукаєте самі у зовнішніх базах — на сторінці їх немає.</p>
+    <ol class="steps">
+      <li><b>Тріаж залежностей.</b> За маніфестом (<code>package.json</code> /
+        <code>requirements.txt</code>) для кожної залежності визначте: <b>вразлива</b>
+        (ця версія має відому CVE) чи <b>безпечна</b>. Перевіряйте версію у
+        <b>NVD</b>, <b>GitHub Advisory Database</b> або <b>Snyk</b>.</li>
+      <li><b>Критичність.</b> Серед вразливих позначте <b>критичні</b> — з
+        <b>CVSS ≥ 9.0</b> (перевіряйте за CVSS-калькулятором FIRST.org).</li>
+      <li><b>Пошук витоків.</b> У наданих рядках код-пошуку позначте <b>справжні
+        секрети</b> (ключі, токени, паролі, приватні ключі), відсіявши шум
+        (публічні ключі, URL, прапорці конфігу).</li>
+      <li><b>Звіт.</b> Впишіть <b>CVE найвищого пріоритету</b> (найбільший CVSS) та
+        <b>безпечну версію</b>, до якої оновити.</li>
+      <li><b>Здача.</b> Натисніть <b>«Завантажити відповіді (JSON)»</b> і прикріпіть файл
+        до завдання. Самоперевірки тут немає — оцінює викладач.</li>
+    </ol>
+
+    <h2>Приклад (на сторонніх даних — не з вашого варіанту)</h2>
+    <div class="ex"><b>Тріаж:</b> <code>lodash 4.17.11</code> → у NVD є
+      <code>CVE-2019-10744</code> (CVSS 9.1) → <b>вразлива</b> та <b>критична</b>.
+      <code>express 4.18.2</code> → відомих CVE немає → <b>безпечна</b>.</div>
+    <div class="ex"><b>Витоки:</b> <code>AWS_SECRET_ACCESS_KEY=…</code> → справжній секрет.
+      <code>API_BASE_URL=https://…</code> → не секрет (шум).</div>
+    <div class="ex"><b>Звіт:</b> найвищий CVSS у наборі — <code>9.8</code>
+      (напр. <code>CVE-2021-44906</code>, minimist) → у звіт першим, оновити до
+      безпечної версії.</div>
+  </div>
+
+  <div id="result" class="hidden">
+    <div class="card">
+      <div class="tools">
+        <button class="ghost" id="dlAll">⬇ Завантажити відповіді (JSON)</button>
+      </div>
+      <h2 style="margin-top:0">Завдання — variant <span id="vnum"></span></h2>
+
+      <h3>Маніфести проєкту <span id="proj" class="mono"></span></h3>
+      <div class="row" style="gap:16px">
+        <div style="flex:1;min-width:240px">
+          <div class="hint">package.json</div>
+          <pre id="pkgjson"></pre>
+        </div>
+        <div style="flex:1;min-width:240px">
+          <div class="hint">requirements.txt</div>
+          <pre id="reqtxt"></pre>
+        </div>
+      </div>
+
+      <h3>Крок 1. Тріаж залежностей (+ критичність)</h3>
+      <p class="hint">Для кожної: вразлива / безпечна. Серед вразливих — позначте
+        критичні (CVSS ≥ 9.0).</p>
+      <table id="deps">
+        <thead><tr><th></th><th>Пакет</th><th>Версія</th><th>Вердикт</th>
+          <th class="critcell">Критична (≥9.0)</th></tr></thead>
+        <tbody></tbody>
+      </table>
+
+      <h3>Крок 2. Пошук витоків — позначте справжні секрети</h3>
+      <p class="hint">Результати код-пошуку по репозиторію. Відмітьте реальні секрети.</p>
+      <div id="leaks" class="leaks"></div>
+
+      <h3>Крок 3. Звіт — найвищий пріоритет</h3>
+      <div id="report"></div>
+
+      <div class="tools" style="margin-top:18px">
+        <button id="dlAll2">⬇ Завантажити відповіді (JSON)</button>
+      </div>
+      <div id="savemsg" class="hint"></div>
+    </div>
+  </div>
+
+  <footer>
+    Усі дані синтетичні (проєкт <code>shop-backend</code> не існує); секрети у прикладах
+    — несправжні. Файл відповідей має містити ваш user-id.
+  </footer>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let current = null; // { id, deps, leaks }
+
+function esc(s){ return String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+
+async function loadVariant(id){
+  $("msg").textContent = "";
+  const base = `t/${id}/`;
+  let deps, leaks, meta;
+  try {
+    const [a,b,c] = await Promise.all([
+      fetch(base+"deps.json",{cache:"no-store"}),
+      fetch(base+"leaks.json",{cache:"no-store"}),
+      fetch(base+"meta.json",{cache:"no-store"}),
+    ]);
+    if(!a.ok||!b.ok||!c.ok) throw 0;
+    deps = await a.json(); leaks = await b.json(); meta = await c.json();
+  } catch(e){
+    $("result").classList.add("hidden");
+    $("msg").textContent = "Набору з таким user-id немає — перевірте id зі списку.";
+    return;
+  }
+
+  $("vnum").textContent = meta.variant ?? id;
+  $("proj").textContent = deps.project || "";
+  $("pkgjson").textContent = deps.package_json || "";
+  $("reqtxt").textContent = deps.requirements_txt || "";
+
+  // Крок 1: таблиця залежностей (радіо вердикт + чекбокс критична)
+  const dtb = $("deps").querySelector("tbody"); dtb.innerHTML = "";
+  deps.dependencies.forEach((d, i) => {
+    const tr = document.createElement("tr");
+    tr.innerHTML =
+      `<td><span class="eco">${esc(d.eco)}</span></td>`+
+      `<td class="mono">${esc(d.name)}</td><td class="mono">${esc(d.version)}</td>`+
+      `<td class="verdict">`+
+        `<label><input type="radio" name="d_${i}" value="VULN"> вразлива</label>`+
+        `<label><input type="radio" name="d_${i}" value="SAFE"> безпечна</label>`+
+      `</td>`+
+      `<td class="critcell"><input type="checkbox" class="crit" data-key="${esc(d.key)}"></td>`;
+    dtb.appendChild(tr);
+  });
+
+  // Крок 2: витоки — чекбокси
+  const ld = $("leaks"); ld.innerHTML = "";
+  leaks.items.forEach(it => {
+    const lab = document.createElement("label");
+    lab.innerHTML =
+      `<input type="checkbox" class="lk" data-text="${esc(it.text)}">`+
+      `<span class="txt">${esc(it.text)}</span>`;
+    ld.appendChild(lab);
+  });
+
+  // Крок 3: звіт
+  $("report").innerHTML =
+    `<p class="hint">${esc(meta.task || "")}</p>`+
+    `<label for="wc">CVE найвищого пріоритету:</label>`+
+    `<input type="text" id="wc" placeholder="напр. CVE-2021-44906">`+
+    `<label for="wf" style="margin-top:10px">Безпечна версія (fix):</label>`+
+    `<input type="text" id="wf" placeholder="напр. 1.2.6">`;
+
+  current = { id, deps: deps.dependencies, leaks: leaks.items };
+  $("result").classList.remove("hidden");
+  $("savemsg").textContent = "";
+  try { localStorage.setItem("pz10_id", id); } catch(e){}
+}
+
+function collectAnswers(){
+  let unanswered = 0;
+  const deps = {};
+  current.deps.forEach((d, i) => {
+    const sel = document.querySelector(`input[name="d_${i}"]:checked`);
+    if(sel) deps[d.key] = sel.value; else unanswered++;
+  });
+  const critical = [...document.querySelectorAll(".crit:checked")].map(c => c.dataset.key);
+  const leaks = [...document.querySelectorAll(".lk:checked")].map(c => c.dataset.text);
+  return {
+    variant: current.id,
+    submitted_at: new Date().toISOString(),
+    deps, critical,
+    leaks_marked: leaks,
+    worst_cve: ($("wc")?.value || "").trim(),
+    worst_fix: ($("wf")?.value || "").trim(),
+    _unanswered: unanswered,
+  };
+}
+
+function exportJson(){
+  if(!current) return;
+  const ans = collectAnswers();
+  const warnUn = ans._unanswered;
+  delete ans._unanswered;
+  const blob = new Blob([JSON.stringify(ans, null, 2)], {type:"application/json"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `pz10_${current.id}.json`;
+  a.click();
+  URL.revokeObjectURL(a.href);
+  $("savemsg").textContent = warnUn
+    ? `Файл збережено. Увага: ${warnUn} залежностей без вердикту — можна дозаповнити й завантажити ще раз.`
+    : "Файл збережено. Прикріпіть його до завдання.";
+}
+
+$("go").addEventListener("click", () => {
+  const id = $("num").value.trim();
+  if(!id){ $("msg").textContent = "Введіть свій user-id."; return; }
+  loadVariant(encodeURIComponent(id));
+});
+$("num").addEventListener("keydown", e => { if(e.key==="Enter") $("go").click(); });
+$("dlAll").addEventListener("click", exportJson);
+$("dlAll2").addEventListener("click", exportJson);
+
+(async () => {
+  try {
+    const r = await fetch("t/index.json",{cache:"no-store"});
+    if(r.ok){
+      const list = await r.json();
+      if(list.length) $("hint").textContent =
+        `Доступно варіантів: ${list.length}. Ваш user-id — зі списку групи.`;
+    }
+  } catch(e){}
+  try { const last = localStorage.getItem("pz10_id"); if(last) $("num").value = last; } catch(e){}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+{
+  "variant": "user1041",
+  "project": "shop-backend",
+  "package_json": "{\n  \"name\": \"shop-backend\",\n  \"version\": \"1.0.0\",\n  \"dependencies\": {\n    \"dotenv\": \"^16.0.3\",\n    \"express\": \"^4.18.2\",\n    \"minimist\": \"^1.2.0\",\n    \"react\": \"^18.2.0\",\n    \"lodash\": \"^4.17.11\"\n  }\n}",
+  "requirements_txt": "Flask==0.12.2\nurllib3==1.25.2\ngunicorn==21.2.0\nSQLAlchemy==2.0.19\n",
+  "dependencies": [
+    {
+      "eco": "npm",
+      "name": "minimist",
+      "version": "1.2.0",
+      "key": "minimist@1.2.0"
+    },
+    {
+      "eco": "npm",
+      "name": "react",
+      "version": "18.2.0",
+      "key": "react@18.2.0"
+    },
+    {
+      "eco": "pip",
+      "name": "gunicorn",
+      "version": "21.2.0",
+      "key": "gunicorn@21.2.0"
+    },
+    {
+      "eco": "pip",
+      "name": "urllib3",
+      "version": "1.25.2",
+      "key": "urllib3@1.25.2"
+    },
+    {
+      "eco": "npm",
+      "name": "lodash",
+      "version": "4.17.11",
+      "key": "lodash@4.17.11"
+    },
+    {
+      "eco": "pip",
+      "name": "Flask",
+      "version": "0.12.2",
+      "key": "Flask@0.12.2"
+    },
+    {
+      "eco": "npm",
+      "name": "express",
+      "version": "4.18.2",
+      "key": "express@4.18.2"
+    },
+    {
+      "eco": "npm",
+      "name": "dotenv",
+      "version": "16.0.3",
+      "key": "dotenv@16.0.3"
+    },
+    {
+      "eco": "pip",
+      "name": "SQLAlchemy",
+      "version": "2.0.19",
+      "key": "SQLAlchemy@2.0.19"
+    }
+  ]
+}

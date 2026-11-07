@@ -1,0 +1,17 @@
+{
+  "variant": "user1107",
+  "items": [
+    {
+      "text": "# TODO: винести ключі у Vault"
+    },
+    {
+      "text": "NODE_ENV=production"
+    },
+    {
+      "text": "STRIPE_SECRET=sk_live_…  (синтетичний секретний ключ)"
+    },
+    {
+      "text": "-----BEGIN RSA PRIVATE KEY-----  (приватний ключ id_rsa у репозиторії)"
+    }
+  ]
+}

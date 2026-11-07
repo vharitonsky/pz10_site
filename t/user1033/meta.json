@@ -1,0 +1,4 @@
+{
+  "variant": "user1033",
+  "task": "Знайдіть вразливу залежність з найвищим CVSS і впишіть її CVE та безпечну версію (lookup у NVD / GitHub Advisory / Snyk)."
+}

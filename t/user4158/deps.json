@@ -1,0 +1,62 @@
+{
+  "variant": "user4158",
+  "project": "shop-backend",
+  "package_json": "{\n  \"name\": \"shop-backend\",\n  \"version\": \"1.0.0\",\n  \"dependencies\": {\n    \"helmet\": \"^6.0.1\",\n    \"node-fetch\": \"^2.6.0\",\n    \"dotenv\": \"^16.0.3\",\n    \"lodash\": \"^4.17.11\",\n    \"express\": \"^4.18.2\"\n  }\n}",
+  "requirements_txt": "Flask==0.12.2\nPyYAML==5.1\ngunicorn==21.2.0\nSQLAlchemy==2.0.19\n",
+  "dependencies": [
+    {
+      "eco": "npm",
+      "name": "dotenv",
+      "version": "16.0.3",
+      "key": "dotenv@16.0.3"
+    },
+    {
+      "eco": "pip",
+      "name": "SQLAlchemy",
+      "version": "2.0.19",
+      "key": "SQLAlchemy@2.0.19"
+    },
+    {
+      "eco": "pip",
+      "name": "PyYAML",
+      "version": "5.1",
+      "key": "PyYAML@5.1"
+    },
+    {
+      "eco": "npm",
+      "name": "lodash",
+      "version": "4.17.11",
+      "key": "lodash@4.17.11"
+    },
+    {
+      "eco": "npm",
+      "name": "node-fetch",
+      "version": "2.6.0",
+      "key": "node-fetch@2.6.0"
+    },
+    {
+      "eco": "npm",
+      "name": "express",
+      "version": "4.18.2",
+      "key": "express@4.18.2"
+    },
+    {
+      "eco": "npm",
+      "name": "helmet",
+      "version": "6.0.1",
+      "key": "helmet@6.0.1"
+    },
+    {
+      "eco": "pip",
+      "name": "gunicorn",
+      "version": "21.2.0",
+      "key": "gunicorn@21.2.0"
+    },
+    {
+      "eco": "pip",
+      "name": "Flask",
+      "version": "0.12.2",
+      "key": "Flask@0.12.2"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "variant": "user1082",
+  "items": [
+    {
+      "text": "DEBUG=false"
+    },
+    {
+      "text": "-----BEGIN RSA PRIVATE KEY-----  (приватний ключ id_rsa у репозиторії)"
+    },
+    {
+      "text": "# TODO: винести ключі у Vault"
+    },
+    {
+      "text": "GITHUB_TOKEN=ghp_…  (синтетичний токен доступу)"
+    },
+    {
+      "text": "API_BASE_URL=https://api.shop.example.com"
+    }
+  ]
+}
